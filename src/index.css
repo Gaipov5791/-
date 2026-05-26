@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Theme colors corresponding to the corporate design */
+  --color-brand-primary: #001838;
+  --color-brand-secondary: #006684;
+  --color-brand-accent: #D4AF37;
+  --color-brand-red: #E30613;
+  --color-brand-sky: #6FC8EE;
+  --color-brand-background: #faf9fe;
+  --color-brand-surface: #ffffff;
+  --color-brand-surface-low: #f4f3f8;
+  --color-brand-surface-high: #e8e7ec;
+  --color-brand-on-surface: #1a1c1f;
+  --color-brand-on-surface-variant: #43474f;
+  --color-brand-outline-variant: #c3c6d0;
+  --color-brand-dark: #1d293d;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-brand-background);
+    color: var(--color-brand-on-surface);
+  }
+}
+
+/* Custom scrollbar and glass effect utilities */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 102, 132, 0.2);
+  border-radius: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 102, 132, 0.4);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero-gradient {
+  background: linear-gradient(180deg, rgba(0, 24, 56, 0.55) 0%, rgba(0, 24, 56, 0.8) 100%);
+}
+
+.partner-logo {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: all 0.4s ease;
+}
+
+.partner-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "National Investment Fund of the Kyrgyz Republic",
+  "description": "Портал ОАО «Национальный инвестиционный фонд Кыргызской Республики» с интерактивной подачей заявок на финансирование, каталогом проектов, новостями и инвестиционным калькулятором.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
